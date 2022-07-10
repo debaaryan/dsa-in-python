@@ -1,8 +1,17 @@
+import math
+
+
 def A(n):
-    i = 1
-    while i <= n:
-        print('Deb {}'.format(i))
-        i = i*2
+    for i in range(math.floor(n/2), n+1):
+        j = 1
+        while j <= n:
+            j = 2*j
+            k = 1
+            while k <= n:
+                print('Deb')
+                k = k*2
+
+# (n/2 + 1)(log_2 n + 1)(log_2 n + 1)=n/2 * (log_2 n)^2
 
 
-A(5)
+A(10)
