@@ -1,17 +1,13 @@
 import math
 
 
-def A(n):
-    for i in range(math.floor(n/2), n+1):
-        j = 1
+def A(k):
+    n = pow(2, 2 ** k)
+    for i in range(1, n+1):
+        j = 2
         while j <= n:
-            j = 2*j
-            k = 1
-            while k <= n:
-                print('Deb')
-                k = k*2
-
-# (n/2 + 1)(log_2 n + 1)(log_2 n + 1)=n/2 * (log_2 n)^2
+            print('Deb {}'.format(j))
+            j = int(math.pow(j, 2))
 
 
-A(10)
+A(2)
